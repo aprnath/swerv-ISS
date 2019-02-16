@@ -7301,9 +7301,9 @@ Core<URV>::emulateNewlib()
 	    *((uint16_t*) ptr) = buff.st_rdev;            ptr += 2;
 	    *((uint32_t*) ptr) = buff.st_size;            ptr += 4;
 	    /* st_spare1 */                               ptr += 4;
-	    *((uint32_t*) ptr) = buff.st_mtim.tv_sec;     ptr += 4;
+	    //*((uint32_t*) ptr) = buff.st_mtim.tv_sec;     ptr += 4;
 	    /* st_spare2 */                               ptr += 4;
-	    *((uint32_t*) ptr) = buff.st_ctim.tv_sec;     ptr += 4;
+	    //*((uint32_t*) ptr) = buff.st_ctim.tv_sec;     ptr += 4;
 	    /* st_spare3 */                               ptr += 4;
 	    *((uint32_t*) ptr) = buff.st_blksize;         ptr += 4;
 	    /* st_spare4 */                               ptr += 8;
